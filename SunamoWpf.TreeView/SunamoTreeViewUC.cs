@@ -1,3 +1,4 @@
+using UiHotReload = global::SunamoWpf.TreeView.UiHotReload;
 namespace SunamoWpf.TreeView;
 
 /// <summary>
@@ -11,6 +12,7 @@ public partial class SunamoTreeViewUC : UserControl
     /// </summary>
     public SunamoTreeViewUC()
     {
-        InitializeComponent();
+        BuildUi();
+        UiHotReload.Register(this);
     }
 }
